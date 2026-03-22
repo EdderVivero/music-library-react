@@ -1,0 +1,78 @@
+/* Library Component Styles */
+
+.library {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 30px 20px;
+  border-top: 1px solid rgba(255, 44, 146, 0.15);
+}
+
+.library h2 {
+  font-size: 1.8rem;
+  font-weight: 700;
+  margin-bottom: 20px;
+  background: linear-gradient(135deg, #FF2C92 0%, #FF66D9 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  letter-spacing: -0.5px;
+}
+
+.library-container {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.song-item {
+  background: rgba(255, 44, 146, 0.05);
+  border: 1px solid rgba(255, 44, 146, 0.15);
+  border-radius: 12px;
+  padding: 16px;
+  transition: all 0.3s ease;
+  backdrop-filter: blur(10px);
+}
+
+.song-item:hover {
+  background: rgba(255, 44, 146, 0.1);
+  border-color: rgba(255, 44, 146, 0.3);
+  transform: translateY(-4px);
+  box-shadow: 0 12px 24px rgba(255, 44, 146, 0.2);
+}
+
+/* Empty Message */
+.empty-message {
+  text-align: center;
+  color: rgba(255, 255, 255, 0.5);
+  font-size: 1rem;
+  padding: 40px 20px;
+  background: rgba(255, 44, 146, 0.03);
+  border: 1px dashed rgba(255, 44, 146, 0.15);
+  border-radius: 12px;
+  font-weight: 500;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .library {
+    padding: 20px 15px;
+  }
+
+  .library h2 {
+    font-size: 1.4rem;
+    margin-bottom: 15px;
+  }
+
+  .library-container {
+    gap: 12px;
+  }
+
+  .song-item {
+    padding: 12px;
+  }
+
+  .empty-message {
+    padding: 30px 15px;
+    font-size: 0.9rem;
+  }
+}
