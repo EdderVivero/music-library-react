@@ -1,0 +1,93 @@
+/* SearchResults Component Styles */
+
+.search-results {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 30px 20px;
+  border-bottom: 1px solid rgba(255, 44, 146, 0.15);
+}
+
+.search-results h2 {
+  font-size: 1.8rem;
+  font-weight: 700;
+  margin-bottom: 20px;
+  background: linear-gradient(135deg, #FF2C92 0%, #FF66D9 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  letter-spacing: -0.5px;
+}
+
+.results-container {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.song-item {
+  background: rgba(255, 44, 146, 0.05);
+  border: 1px solid rgba(255, 44, 146, 0.15);
+  border-radius: 12px;
+  padding: 16px;
+  transition: all 0.3s ease;
+  backdrop-filter: blur(10px);
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.song-item:hover {
+  background: rgba(255, 44, 146, 0.1);
+  border-color: rgba(255, 44, 146, 0.3);
+  transform: translateY(-4px);
+  box-shadow: 0 12px 24px rgba(255, 44, 146, 0.2);
+}
+
+/* Add to Library Button */
+.add-btn {
+  background: linear-gradient(135deg, #FF2C92 0%, #FF66D9 100%);
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 0.95rem;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 12px rgba(255, 44, 146, 0.3);
+  align-self: flex-start;
+}
+
+.add-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(255, 44, 146, 0.5);
+  background: linear-gradient(135deg, #FF66D9 0%, #FF88EB 100%);
+}
+
+.add-btn:active {
+  transform: translateY(0);
+  box-shadow: 0 2px 8px rgba(255, 44, 146, 0.3);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .search-results {
+    padding: 20px 15px;
+  }
+
+  .search-results h2 {
+    font-size: 1.4rem;
+    margin-bottom: 15px;
+  }
+
+  .song-item {
+    padding: 12px;
+    gap: 10px;
+  }
+
+  .add-btn {
+    width: 100%;
+    text-align: center;
+    align-self: stretch;
+  }
+}
